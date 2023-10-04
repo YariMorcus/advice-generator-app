@@ -6,6 +6,8 @@ This is a solution to the [advice generator app challenge on Frontend Mentor](ht
 
 ![](screenshot.png)
 
+**Deployment status**
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/65b3ab3b-ab6f-44b8-bd40-5e7de0b8a0ce/deploy-status)](https://app.netlify.com/sites/advice-generator-app-yari-morcus/deploys?branch=main)
 
 ## Table of contents
