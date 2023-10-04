@@ -1,0 +1,6 @@
+# Ignore folders
+node_modules
+dist
+temp
+.cache
+src/starter-files

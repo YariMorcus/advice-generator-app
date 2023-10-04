@@ -1,0 +1,71 @@
+// Import variables
+@use '../abstracts/variables' as v;
+
+// Import mixins
+@use '../abstracts/mixins' as m;
+
+/* Set core root defaults */
+html {
+  font-size: 10px;
+
+  &:focus-within {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Set core body defaults */
+body {
+  display: flex;
+  flex-direction: column;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Disable all animations, transitions and smooth scroll for people that prefer not to see them*/
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.footer {
+  padding: 0 1.28rem 1.28rem;
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.2rem;
+  color: v.$black;
+
+  &__link {
+    color: v.$black;
+
+    &:hover {
+      color: scale-color(v.$black, $lightness: 20%);
+    }
+
+    &:focus-visible {
+      outline: 2px solid v.$black;
+      border-radius: 1px;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "advice-generator-app",
+  "version": "1.0.0",
+  "description": "Frontend Mentor challenge made by Yari Morcus",
+  "default": "index.html",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YariMorcus/advice-generator-app.git"
+  },
+  "author": "Yari Morcus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YariMorcus/advice-generator-app/issues"
+  },
+  "homepage": "https://github.com/YariMorcus/advice-generator-app#readme",
+  "devDependencies": {
+    "sass": "^1.68.0"
+  }
+}
