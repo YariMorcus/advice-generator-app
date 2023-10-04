@@ -6,6 +6,8 @@ This is a solution to the [advice generator app challenge on Frontend Mentor](ht
 
 ![](screenshot.png)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/65b3ab3b-ab6f-44b8-bd40-5e7de0b8a0ce/deploy-status)](https://app.netlify.com/sites/advice-generator-app-yari-morcus/deploys?branch=main)
+
 ## Table of contents
 
 - [Overview](#overview)
@@ -18,11 +20,12 @@ This is a solution to the [advice generator app challenge on Frontend Mentor](ht
 
 ### The challenge
 
-To build the huddle landing page according to the given designs as close as possible.
+To build the advice generator app according to the given designs as close as possible.
 The users should be able to:
 
-- View the optimal layout for the page depending on their device's screen size
+- View the optimal layout for the app depending on their device's screen size
 - See hover states for all interactive elements on the page
+- Generate a new piece of advice by clicking the dice icon
 
 ### Links
 
