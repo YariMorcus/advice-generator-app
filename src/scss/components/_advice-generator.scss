@@ -7,8 +7,8 @@
 
 .advice {
   border: 1px solid;
-  margin: 0 auto;
-  max-width: 34rem;
+  margin: 2rem auto;
+  max-width: 26rem;
   text-align: center;
   padding: 0 2rem;
 
@@ -25,5 +25,13 @@
     width: 6rem;
     height: 6rem;
     border-radius: 3rem;
+  }
+
+  @include m.breakpoint-sm() {
+    max-width: 34rem;
+  }
+
+  @include m.breakpoint-md() {
+    max-width: 43rem;
   }
 }
