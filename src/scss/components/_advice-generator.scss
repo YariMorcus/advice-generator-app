@@ -49,4 +49,8 @@
   @include m.breakpoint-md() {
     max-width: 43rem;
   }
+
+  @include m.orientation-landscape() {
+    margin-bottom: 6rem;
+  }
 }
