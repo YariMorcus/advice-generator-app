@@ -11,3 +11,10 @@
     @content;
   }
 }
+
+// Landscape - orientation
+@mixin orientation-landscape() {
+  @media (orientation: Landscape) {
+    @content;
+  }
+}
