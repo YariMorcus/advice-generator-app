@@ -12,23 +12,31 @@
   padding: 4rem 2rem 0;
   max-width: 26rem;
   text-align: center;
+  border-radius: 1rem;
+  background-color: v.$dark-grayish-blue;
 
   &__title {
     margin-bottom: 2rem;
     font-size: 1.5rem;
+    color: v.$neon-green;
   }
 
   &__quote {
     display: block;
     margin-bottom: 2rem;
     font-size: t.$font-size-quote;
+    color: v.$light-cyan;
   }
 
   &__divider {
     margin-bottom: 5.6rem;
     height: 1.6rem;
-    background: url('../img/pattern-divider-mobile.svg');
+    background: center url('../img/pattern-divider-mobile.svg');
     border: none;
+
+    @include m.breakpoint-md() {
+      background: center url('../img/pattern-divider-desktop.svg');
+    }
   }
 
   &__dice-btn {
@@ -38,7 +46,9 @@
     width: 6rem;
     height: 6rem;
     background: no-repeat center url('../img/icon-dice.svg');
+    border: none;
     border-radius: 3rem;
+    background-color: v.$neon-green;
     transform: translateX(-50%);
   }
 
