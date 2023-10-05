@@ -51,6 +51,7 @@ The users should be able to:
    **Feature**: A button that generates a new piece of advice based on an API call
 
 ### Flowchart
+![](flowchart.jpg)
 
 ## Author
 
