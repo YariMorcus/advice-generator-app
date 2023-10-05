@@ -16,6 +16,9 @@ This is a solution to the [advice generator app challenge on Frontend Mentor](ht
   - [The challenge](#the-challenge)
   - [Links](#links)
   - [Useful resources](#useful-resources)
+- [Project information](#project-information)
+  - [User stories and features](#user-stories-and-features)
+  - [Flowchart](#flow-chart)
 - [Author](#author)
 
 ## Overview
@@ -38,6 +41,16 @@ The users should be able to:
 
 - [Transfonter](https://transfonter.org) - Has been used to convert the downloaded font files to woff and woff2 (most recent font formats, supported in all major browsers), and generate the corresponding `@font-face` css rulesets
 - [Frontend Mentor - Advice generator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db)
+
+## Project information
+
+### User stories and features
+
+1. As a user I want to generate a new piece of advice so I might be able to learn something from it
+
+   **Feature**: A button that generates a new piece of advice based on an API call
+
+### Flowchart
 
 ## Author
 
