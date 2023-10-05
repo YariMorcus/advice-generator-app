@@ -15,6 +15,7 @@ html {
 
 /* Set core body defaults */
 body {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   text-rendering: optimizeSpeed;
@@ -51,6 +52,7 @@ img {
 }
 
 .footer {
+  border-top: 1px solid;
   padding: 0 1.28rem 1.28rem;
   font-family: 'Manrope', sans-serif;
   font-size: 1.2rem;

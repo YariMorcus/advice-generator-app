@@ -4,3 +4,26 @@
 // Import mixins and variables
 @use '../abstracts/mixins' as m;
 @use '../abstracts/variables' as v;
+
+.advice {
+  border: 1px solid;
+  margin: 0 auto;
+  max-width: 34rem;
+  text-align: center;
+  padding: 0 2rem;
+
+  &__title {
+    font-size: 1.5rem;
+  }
+
+  &__quote {
+    font-size: t.$font-size-quote;
+  }
+
+  &__dice-btn {
+    background: no-repeat center url('../img/icon-dice.svg');
+    width: 6rem;
+    height: 6rem;
+    border-radius: 3rem;
+  }
+}
