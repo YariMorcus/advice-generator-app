@@ -30,6 +30,10 @@
     font-weight: 800;
     font-size: t.$font-size-quote;
     color: v.$light-cyan;
+
+    @include m.breakpoint-md() {
+      margin-bottom: 3rem;
+    }
   }
 
   &__divider {
@@ -39,6 +43,7 @@
     border: none;
 
     @include m.breakpoint-md() {
+      margin-bottom: 7rem;
       background: center url('../img/pattern-divider-desktop.svg');
     }
   }
@@ -62,6 +67,7 @@
 
   @include m.breakpoint-md() {
     max-width: 52rem;
+    padding: 5rem 2.5rem 0;
   }
 
   @include m.orientation-landscape() {
