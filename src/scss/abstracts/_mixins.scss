@@ -1,0 +1,6 @@
+// Tablet - 768px
+@mixin breakpoint-md() {
+  @media (min-width: 48rem) {
+    @content;
+  }
+}
