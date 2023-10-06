@@ -18,7 +18,7 @@ This is a solution to the [advice generator app challenge on Frontend Mentor](ht
   - [Useful resources](#useful-resources)
 - [Project information](#project-information)
   - [User stories and features](#user-stories-and-features)
-  - [Flowchart](#flow-chart)
+  - [Flowchart](#flowchart)
 - [Author](#author)
 
 ## Overview
