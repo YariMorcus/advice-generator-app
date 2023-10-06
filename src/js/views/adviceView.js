@@ -1,4 +1,4 @@
-class adviceGeneratorView {
+class adviceView {
   #buttonEl = document.querySelector('.js-advice__dice-btn');
 
   addHandlerGenerate(handler) {
@@ -6,4 +6,4 @@ class adviceGeneratorView {
   }
 }
 
-export default new adviceGeneratorView();
+export default new adviceView();

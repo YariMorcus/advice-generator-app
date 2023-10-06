@@ -1,14 +1,18 @@
 import * as model from './model.js';
-import adviceGeneratorView from './views/adviceGeneratorView.js';
+import adviceView from './views/adviceView.js';
 
 const adviceController = async function () {
-  // 1) Fetch advice from API
+  // 1) Fetch and store advice from API
   await model.fetchAdvice();
-  // 3) Render advice in UI
+
+  // 2) Render current advice number
+  adviceView.renderAdviceNumber();
+
+  // 3) Render current advice number
 };
 
 const init = function () {
-  adviceGeneratorView.addHandlerGenerate(adviceController);
+  adviceView.addHandlerGenerate(adviceController);
 };
 
 init();
