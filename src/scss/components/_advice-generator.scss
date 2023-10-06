@@ -57,10 +57,12 @@
     border: none;
     border-radius: 3rem;
     transform: translateX(-50%);
+    transition: box-shadow 0.5s ease-in-out;
 
     &:hover {
-      background: scale-color(v.$neon-green, $lightness: 14%)
+      background: scale-color(v.$neon-green, $lightness: 10%)
         url('../img/icon-dice.svg') center no-repeat;
+      box-shadow: 0 5px 30px 2px scale-color(v.$neon-green, $lightness: 10%);
     }
   }
 
