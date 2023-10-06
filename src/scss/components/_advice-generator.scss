@@ -53,11 +53,17 @@
     left: 50%;
     width: 6rem;
     height: 6rem;
-    background: no-repeat center url('../img/icon-dice.svg');
+    background: no-repeat center url('../img/icon-dice.svg') v.$neon-green;
     border: none;
     border-radius: 3rem;
-    background-color: v.$neon-green;
     transform: translateX(-50%);
+    transition: box-shadow 0.5s ease-in-out;
+
+    &:hover {
+      background: scale-color(v.$neon-green, $lightness: 10%)
+        url('../img/icon-dice.svg') center no-repeat;
+      box-shadow: 0 5px 30px 2px scale-color(v.$neon-green, $lightness: 10%);
+    }
   }
 
   @include m.breakpoint-sm() {
