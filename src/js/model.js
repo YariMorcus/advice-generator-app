@@ -11,15 +11,22 @@ const state = {
 
 export const fetchAdvice = async function () {
   try {
-    // 1) Fetch advice
+    // 1) Fetch advice data
     const data = await getJSON(API_URL);
 
+    // 2) Save advice data
     state.currentAdvice.id = data.slip.id;
     state.currentAdvice.advice = data.slip.advice;
 
-    console.log(state.currentAdvice);
-    // 2) Store advice in state
+    // 3) Update statistics
+    updateStatistics();
+
+    console.log(state);
   } catch (err) {
     console.error(err);
   }
+};
+
+const updateStatistics = function () {
+  state.advicesGenerated++;
 };
