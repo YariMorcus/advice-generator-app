@@ -6,9 +6,7 @@ const adviceController = async function () {
   await model.fetchAdvice();
 
   // 2) Render current advice number
-  adviceView.renderAdviceNumber();
-
-  // 3) Render current advice number
+  adviceView.render(model.state);
 };
 
 const init = function () {
