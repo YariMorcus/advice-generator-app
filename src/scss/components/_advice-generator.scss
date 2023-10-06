@@ -4,3 +4,72 @@
 // Import mixins and variables
 @use '../abstracts/mixins' as m;
 @use '../abstracts/variables' as v;
+
+.advice {
+  position: relative;
+  margin: 2rem auto;
+  padding: 4rem 2.5rem 0;
+  max-width: 26rem;
+  text-align: center;
+  border-radius: 1rem;
+  background-color: v.$dark-grayish-blue;
+
+  &__title {
+    margin-bottom: 2rem;
+    color: v.$neon-green;
+    font-weight: 500;
+    font-size: 1.2rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+  }
+
+  &__quote {
+    display: block;
+    margin-bottom: 2rem;
+    font-weight: 800;
+    font-size: t.$font-size-quote;
+    color: v.$light-cyan;
+
+    @include m.breakpoint-md() {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__divider {
+    margin-bottom: 6rem;
+    height: 1.6rem;
+    background: center url('../img/pattern-divider-mobile.svg');
+    border: none;
+
+    @include m.breakpoint-md() {
+      margin-bottom: 7rem;
+      background: center url('../img/pattern-divider-desktop.svg');
+    }
+  }
+
+  &__dice-btn {
+    position: absolute;
+    bottom: -3rem;
+    left: 50%;
+    width: 6rem;
+    height: 6rem;
+    background: no-repeat center url('../img/icon-dice.svg');
+    border: none;
+    border-radius: 3rem;
+    background-color: v.$neon-green;
+    transform: translateX(-50%);
+  }
+
+  @include m.breakpoint-sm() {
+    max-width: 34rem;
+  }
+
+  @include m.breakpoint-md() {
+    max-width: 52rem;
+    padding: 5rem 2.5rem 0;
+  }
+
+  @include m.orientation-landscape() {
+    margin-bottom: 6rem;
+  }
+}

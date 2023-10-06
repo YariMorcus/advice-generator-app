@@ -15,10 +15,13 @@ html {
 
 /* Set core body defaults */
 body {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   text-rendering: optimizeSpeed;
+  font-family: 'Manrope', sans-serif;
   line-height: 1.5;
+  background-color: v.$dark-blue;
 }
 
 main {
@@ -54,17 +57,18 @@ img {
   padding: 0 1.28rem 1.28rem;
   font-family: 'Manrope', sans-serif;
   font-size: 1.2rem;
-  color: v.$black;
+  color: v.$light-cyan;
+  text-align: center;
 
   &__link {
-    color: v.$black;
+    color: v.$light-cyan;
 
     &:hover {
-      color: scale-color(v.$black, $lightness: 20%);
+      color: scale-color(v.$light-cyan, $lightness: 90%);
     }
 
     &:focus-visible {
-      outline: 2px solid v.$black;
+      outline: 2px solid scale-color(v.$light-cyan, $lightness: 90%);
       border-radius: 1px;
     }
   }
