@@ -61,6 +61,7 @@
     border-radius: 3rem;
     transform: translateX(-50%);
     transition: box-shadow 0.5s ease-in-out;
+    cursor: pointer;
 
     &:hover {
       background: scale-color(v.$neon-green, $lightness: 10%)
@@ -72,6 +73,7 @@
     &--disabled:hover {
       background-color: #808080;
       box-shadow: none;
+      cursor: not-allowed;
     }
   }
 
