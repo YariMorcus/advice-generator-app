@@ -13,6 +13,10 @@ class adviceView extends View {
     });
   }
 
+  enableButton() {
+    this._parentEl.querySelector('.advice__dice-btn').disabled = false;
+  }
+
   disableButton() {
     this._parentEl.querySelector('.advice__dice-btn').disabled = true;
   }

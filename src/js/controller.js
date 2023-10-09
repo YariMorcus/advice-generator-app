@@ -1,3 +1,4 @@
+import { ENABLE_BUTTON_DELAY } from './config.js';
 import * as model from './model.js';
 import adviceView from './views/adviceView.js';
 
@@ -13,6 +14,14 @@ const adviceController = async function () {
 
   // 4) Add disabled class to button
   adviceView.toggleDisableButtonClass();
+
+  // 5) Enable button again after 2 seconds
+  setTimeout(() => {
+    adviceView.enableButton();
+
+    // Remove disabled class of button
+    adviceView.toggleDisableButtonClass();
+  }, ENABLE_BUTTON_DELAY);
 };
 
 const init = function () {
