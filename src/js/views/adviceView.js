@@ -14,16 +14,16 @@ class adviceView extends View {
   }
 
   enableButton() {
-    this._parentEl.querySelector('.advice__dice-btn').disabled = false;
+    this._parentEl.querySelector('.js-advice__dice-btn').disabled = false;
   }
 
   disableButton() {
-    this._parentEl.querySelector('.advice__dice-btn').disabled = true;
+    this._parentEl.querySelector('.js-advice__dice-btn').disabled = true;
   }
 
   toggleDisableButtonClass() {
     this._parentEl
-      .querySelector('.advice__dice-btn')
+      .querySelector('.js-advice__dice-btn')
       .classList.toggle('advice__dice-btn--disabled');
   }
 
