@@ -64,6 +64,12 @@
         url('../img/icon-dice.svg') center no-repeat;
       box-shadow: 0 5px 30px 2px scale-color(v.$neon-green, $lightness: 10%);
     }
+
+    &--disabled,
+    &--disabled:hover {
+      background-color: #808080;
+      box-shadow: none;
+    }
   }
 
   @include m.breakpoint-sm() {
