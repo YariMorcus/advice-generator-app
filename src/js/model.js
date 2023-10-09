@@ -1,7 +1,7 @@
 import { API_URL } from './config.js';
 import { getJSON } from './helper.js';
 
-const state = {
+export const state = {
   currentAdvice: {
     id: null,
     advice: null,
@@ -27,10 +27,8 @@ export const fetchAdvice = async function () {
 
     // 3) Update statistics
     updateStatistics();
-
-    console.log(state);
   } catch (err) {
-    console.error(err);
+    throw err;
   }
 };
 
