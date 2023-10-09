@@ -13,6 +13,16 @@ class adviceView extends View {
     });
   }
 
+  disableButton() {
+    this._parentEl.querySelector('.advice__dice-btn').disabled = true;
+  }
+
+  toggleDisableButtonClass() {
+    this._parentEl
+      .querySelector('.advice__dice-btn')
+      .classList.toggle('advice__dice-btn--disabled');
+  }
+
   _generateMarkup() {
     return `
       <h1 class="advice__title">Advice #${this._data.advicesGenerated}</h1>

@@ -7,6 +7,12 @@ const adviceController = async function () {
 
   // 2) Render current advice number
   adviceView.render(model.state);
+
+  // 3) Disable button for 2 seconds
+  adviceView.disableButton();
+
+  // 4) Add disabled class to button
+  adviceView.toggleDisableButtonClass();
 };
 
 const init = function () {
