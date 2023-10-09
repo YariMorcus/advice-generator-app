@@ -29,10 +29,13 @@
     font-weight: 800;
     font-size: t.$font-size-quote;
     color: v.$light-cyan;
+  }
 
-    @include m.breakpoint-md() {
-      margin-bottom: 3rem;
-    }
+  &__side-comment {
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    color: v.$light-cyan;
   }
 
   &__divider {
