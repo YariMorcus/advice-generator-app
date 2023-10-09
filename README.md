@@ -23,7 +23,6 @@ This is a solution to the [advice generator app challenge on Frontend Mentor](ht
 - [Project information](#project-information)
   - [User stories and features](#user-stories-and-features)
   - [Flowchart](#flowchart)
-  - [Good to know](#good-to-know)
 - [Author](#author)
 
 ## Overview
