@@ -21,6 +21,10 @@
     font-size: 1.2rem;
     letter-spacing: 4px;
     text-transform: uppercase;
+
+    &--error {
+      color: v.$geraldine;
+    }
   }
 
   &__quote {
@@ -29,10 +33,13 @@
     font-weight: 800;
     font-size: t.$font-size-quote;
     color: v.$light-cyan;
+  }
 
-    @include m.breakpoint-md() {
-      margin-bottom: 3rem;
-    }
+  &__side-comment {
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    color: v.$light-cyan;
   }
 
   &__divider {
@@ -58,11 +65,19 @@
     border-radius: 3rem;
     transform: translateX(-50%);
     transition: box-shadow 0.5s ease-in-out;
+    cursor: pointer;
 
     &:hover {
       background: scale-color(v.$neon-green, $lightness: 10%)
         url('../img/icon-dice.svg') center no-repeat;
       box-shadow: 0 5px 30px 2px scale-color(v.$neon-green, $lightness: 10%);
+    }
+
+    &--disabled,
+    &--disabled:hover {
+      background-color: #808080;
+      box-shadow: none;
+      cursor: not-allowed;
     }
   }
 
