@@ -1,7 +1,7 @@
 import View from './View.js';
 class adviceView extends View {
-  _parentEl = document.querySelector('.advice');
   advice = document.querySelector('.advice__quote');
+  _parentEl = document.querySelector('.advice');
 
   addHandlerGenerate(handler) {
     this._parentEl.addEventListener('click', e => {
