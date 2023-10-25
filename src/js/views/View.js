@@ -44,7 +44,12 @@ export default class View {
    * @returns {undefined}
    */
   renderSpinner() {
-    const markup = `<div class="loading-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>`;
+    const markup = `
+      <h1 class="advice__title">Advice #${this._data.currentAdvice.id}</h1>
+      <div class="loading-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+      <hr class="advice__divider">
+      <button class="advice__dice-btn js-advice__dice-btn" aria-label="Generate advice"></button>
+    `;
 
     this._clear();
     this._parentEl.insertAdjacentHTML('afterbegin', markup);
