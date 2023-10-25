@@ -29,7 +29,7 @@ class adviceView extends View {
 
   _generateMarkup() {
     return `
-      <h1 class="advice__title">Advice #${this._data.advicesGenerated}</h1>
+      <h1 class="advice__title">Advice #${this._data.currentAdvice.id}</h1>
       <q class="advice__quote">${this._data.currentAdvice.advice}</q>
       <hr class="advice__divider">
       <button class="advice__dice-btn js-advice__dice-btn" aria-label="Generate advice"></button>
