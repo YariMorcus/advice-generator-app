@@ -39,6 +39,18 @@ export default class View {
   }
 
   /**
+   * Render loading spinner
+   *
+   * @returns {undefined}
+   */
+  renderSpinner() {
+    const markup = `<div class="loading-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>`;
+
+    this._clear();
+    this._parentEl.insertAdjacentHTML('afterbegin', markup);
+  }
+
+  /**
    * Clear parent element
    * @this {Object} Current view instance
    * @returns {undefined}
