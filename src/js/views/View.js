@@ -45,7 +45,7 @@ export default class View {
    */
   renderSpinner() {
     const markup = `
-      <h1 class="advice__title">Advice #${this._data.currentAdvice.id}</h1>
+      <h1 class="advice__title">Loading advice...</h1>
       <div class="loading-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
       <hr class="advice__divider">
       <button class="advice__dice-btn js-advice__dice-btn" aria-label="Generate advice"></button>
