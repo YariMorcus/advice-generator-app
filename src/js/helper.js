@@ -1,3 +1,5 @@
+import { CACHING_MODE } from './config.js';
+
 /**
  * Retrieve data based on a given URL
  * @param {string} url API URL
@@ -5,7 +7,7 @@
  */
 export const getJSON = async function (url) {
   try {
-    const response = await fetch(url);
+    const response = await fetch(url, { cache: CACHING_MODE });
 
     if (!response.ok) throw new Error('Could not fetch data');
 
