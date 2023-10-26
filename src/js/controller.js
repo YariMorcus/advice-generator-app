@@ -4,35 +4,13 @@ import adviceView from './views/adviceView.js';
 
 const adviceController = async function () {
   try {
-    /**
-     * 1) Fetch and store advice from API
-     *
-     * IF user presses button within 2 seconds,
-     * render loading spinner, otherwise render advice immediately
-     */
+    // 1) Render loading spinner
+    adviceView.renderSpinner();
 
-    if (await model.fetchAdvice()) {
-      adviceView.renderSpinner();
+    // 2) Fetch data from API
+    await model.fetchAdvice();
 
-      // 1) Disable button
-      adviceView.disableButton();
-
-      // 2) Add disabled class to button
-      adviceView.toggleDisableButtonClass();
-
-      // If 2 seconds are passed, enable button and request new advice
-      setTimeout(() => {
-        adviceView.enableButton();
-
-        adviceView.toggleDisableButtonClass();
-
-        adviceController();
-      }, ENABLE_BUTTON_DELAY);
-
-      return;
-    }
-
-    // 2) Render current advice number
+    // 3) Render current advice number
     adviceView.render(model.state);
   } catch (err) {
     adviceView.renderError();

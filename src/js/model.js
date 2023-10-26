@@ -23,18 +23,12 @@ export const fetchAdvice = async function () {
     state.currentAdvice.id = data.slip.id;
     state.currentAdvice.advice = data.slip.advice;
 
-    // 3) Check if current advice is same as previous advice
-    // If yes, return TRUE and show loading spinner instead (controller)
-    if (state.currentAdvice.id === state.pastAdvices.at(-1)?.slip.id)
-      return true;
-
-    // 4) Store past advices
+    // 3) Store past advices
     storePastAdvices(data);
 
-    // 5) Update statistics
+    // 4) Update statistics
     updateStatistics();
   } catch (err) {
-    console.error(err);
     throw err;
   }
 };
